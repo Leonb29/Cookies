@@ -94,7 +94,7 @@ function mostrarResumenCategorias() {
         const div = document.createElement("div");
         div.classList.add("card");
         div.innerHTML = `
-            <img src="${galletita.img}" alt="${galletita.titulo}">
+            <img src="${galletita.img}" alt="${galletita.titulo}" loading="lazy">
             <h3>${galletita.titulo}</h3>
             <p>${galletita.categoria}</p>
         `;
@@ -125,7 +125,7 @@ function mostrarGalletitas(filtro = "todas") {
     const div = document.createElement("div");
     div.classList.add("card");
     div.innerHTML = `
-        <img src="${g.img}" alt="${g.titulo}">
+        <img src="${g.img}" alt="${g.titulo}" loading="lazy">
         <h3>${g.titulo}</h3>
         <p>${g.categoria}</p>
     `;
